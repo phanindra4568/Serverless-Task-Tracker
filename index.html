@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Task Tracker</h1>
+  <button id="login">Login</button>
+  <button id="logout" style="display:none">Logout</button>
+
+  <div id="app" style="display:none">
+    <h2>Add Task</h2>
+    <input id="title" placeholder="Task title" />
+    <button onclick="addTask()">Add</button>
+
+    <h2>Your Tasks</h2>
+    <ul id="tasks"></ul>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
