@@ -9,10 +9,10 @@ loginBtn.addEventListener('click', () => {
   // window.location.href = hostedUrl;
 
   // Option B: If you want the app to build it dynamically (fill values below):
-  const domain = '<COGNITO_DOMAIN>';         // e.g. myapp-domain
-  const region = '<AWS_REGION>';             // e.g. us-east-1
-  const clientId = '<APP_CLIENT_ID>';        // from Cognito App client
-  const redirectUri = '<YOUR_S3_SITE_URL>';  // e.g. https://example-bucket.s3-website.us-east-2.amazonaws.com/
+  const domain = 'mytasktracker-login';         // e.g. myapp-domain
+  const region = 'us-east-1';             // e.g. us-east-1
+  const clientId = '57gvj3onahv2qgi3iml6o8msp4';        // from Cognito App client
+  const redirectUri = 'http://my-task-tracker-frontend-phanindra-2025.s3-website.us-east-2.amazonaws.com';  // e.g. https://example-bucket.s3-website.us-east-2.amazonaws.com/
   // Use Authorization Code + PKCE preferred:
   const responseType = 'code';
   const scope = encodeURIComponent('openid profile email');
