@@ -1,22 +1,32 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Task Tracker Dashboard</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Task Tracker — Login</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <div class="container">
-    <h1 class="title">TASK TRACKER DASHBOARD</h1>
-
+  <main class="container">
     <div class="card">
-      <h2>Welcome</h2>
-      <p>Manage all your tasks in one place. Please login to continue.</p>
+      <h1>Task Tracker</h1>
+      <p>Welcome — please sign in to manage your tasks.</p>
+      <div class="buttons">
+        <!-- The href will be replaced/constructed with your Cognito Hosted UI URL -->
+        <a id="loginBtn" class="btn">Sign in with Cognito</a>
+      </div>
 
-      <button id="loginBtn" class="btn">Login with Cognito</button>
+      <hr />
+      <h2>Public demo (no auth)</h2>
+      <form id="taskForm">
+        <input id="taskInput" placeholder="New task" />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="taskList"></ul>
     </div>
-  </div>
+  </main>
 
   <script src="app.js"></script>
 </body>
 </html>
+
